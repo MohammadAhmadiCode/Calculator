@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="calculator" id="calculator">
+        <div class="grid__item--answer " id="display">0</div>
+        <button  class="grid__item--clear" id="btn-clear">AC</button>
+        <button class="bg--orange grid__item" id="btn-Div">/</button>
+        <button class="grid__item btn-number" onclick="numberVal()">7</button>
+        <button class="grid__item btn-number" onclick="numberVal()">8</button>
+        <button class="grid__item btn-number" onclick="numberVal()">9</button>
+        <button class="bg--orange grid__item" id="btn-Mul">×</button>
+        <button class="grid__item btn-number" onclick="numberVal()">4</button>
+        <button class="grid__item btn-number" onclick="numberVal()">5</button>
+        <button class="grid__item btn-number" onclick="numberVal()">6</button>
+        <button class="bg--orange grid__item" id="btn-Minus">-</button>
+        <button class="grid__item btn-number" onclick="numberVal()">1</button>
+        <button class="grid__item btn-number" onclick="numberVal()">2</button>
+        <button class="grid__item btn-number" onclick="numberVal()">3</button>
+        <button class="bg--orange grid__item" id="btn-Plus">+</button>
+        <button class="grid__item--zero grid__item btn-number" onclick="numberVal()">0</button>
+        <button class="bg--orange-equls grid__item" id="btn-equls">=</button>
+    </div>
+</body>
+<script src="components/js/script.js"></script>
+</html>

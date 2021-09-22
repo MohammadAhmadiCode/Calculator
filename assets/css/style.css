@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.calculator{
+    display: grid;
+    box-shadow: 11px 16px 18px #888888; 
+}
+.grid__item{
+    display: grid;
+    width: 61px;
+    height: 60px;
+    color: #000;
+    place-items: center;
+    border: 1px solid rgb(190, 182, 182);
+    background-color: white;
+    font-size: 20px;
+}
+.grid__item:active{
+    background-color: gray;
+}
+.grid__item--answer{
+    overflow-wrap: break-word;
+    grid-column: span 4;
+    height: 80px;
+    text-align: right;
+    padding: 16px;
+    font-size: 25px;;
+    background-color: #000;
+    color: white;
+    border: none;
+    width: 244px;
+}
+.grid__item--zero{
+    grid-column: 1 / span 3;
+    grid-row: 6;
+    width: 183px;
+}
+.grid__item--clear{
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    border: 1px  solid rgb(190, 182, 182);
+    background-color: rgb(216, 210, 210);
+    font-size: 18px;
+}
+.bg--orange{
+    background-color: orange; 
+    font-size: 25px;
+}
+.bg--orange:active{
+background-color: rgb(255, 102, 0);
+}
+.bg--orange:focus{
+    background-color: rgb(255, 102, 0);
+}
+.bg--orange-equls{
+    background-color: orange; 
+   font-size: 25px;
+}
+.bg--orange-equls:active{
+    background-color: rgb(255, 102, 0);
+}
+.clicked {
+    background-color: darken(orange, 10%);
+}
+@media only screen and (max-width: 414px){
+    .calculator , .grid__item--zero{
+        width: 100%;
+    }
+    .grid__item--answer{
+        height: 20vh;
+        font-size: 35px;
+        padding: 25px;
+        width: 100%;
+    }
+    .grid__item{
+        height:16vh;
+        font-size: 25px;
+        width: 100%;
+    }
+    .bg--orange{
+        font-size: 30px;
+    }
+    .grid__item--clear{
+        font-size: 25px;
+    }
+}
